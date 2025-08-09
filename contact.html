@@ -1,0 +1,61 @@
+g<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Alure Hospitality</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="opmaak.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <span class="logo">Alure Hospitality</span>
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="overons.html">Over ons</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="werkenbij.html">Werken bij</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="contact.html">Vraag personeel aan</a>
+    </div>
+  </header>
+  <main>
+    <section class="contact-section fade-in" style="display: flex; gap: 40px; flex-wrap: wrap;">
+
+      <div class="contact-info" style="flex: 1 1 250px; min-width: 250px; background: #f8f8f8; padding: 24px; border-radius: 8px;">
+        <h2>Contactgegevens</h2>
+        <p><strong>E-mail:</strong> <a href="mailto:info@alurehospitality.nl">info@alurehospitality.nl</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/alurehospitality" target="_blank">@alurehospitality</a></p>
+        <p><strong>KvK:</strong> <em>(hier nog kvk invullen )</em></p>
+        <p><strong>BTW:</strong> <em>(dit waarschijnlijk ook ?)</em></p>
+        <p><strong>EXTRA info <em>(hier nog extra info ofz)</em></strong></p>
+      </div>
+      <form class="contactform" action="https://formspree.io/f/moqoqldw" method="POST" style="flex: 2 1 350px; min-width: 300px; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h2>Contactformulier</h2>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <label for="bedrijf">Bedrijfsnaam</label>
+          <input type="text" id="bedrijf" name="bedrijf" required>
+          <label for="contactpersoon">Contactpersoon</label>
+          <input type="text" id="contactpersoon" name="contactpersoon" required>
+          <label for="dienst">Wat voor dienst nodig</label>
+          <input type="text" id="dienst" name="dienst" required>
+          <label for="data">Aantal dagen / data</label>
+          <input type="text" id="data" name="data">
+          <label for="telefoon">Telefoonnummer</label>
+          <input type="tel" id="telefoon" name="telefoon">
+          <label for="opmerkingen">Opmerkingen / briefing</label>
+          <textarea id="opmerkingen" name="opmerkingen"></textarea>
+          <button type="submit" style="margin-top: 16px;">Verstuur aanvraag</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 Alure Hospitality. Presence with Elegance.
+  </footer>
+</body>
+</html>
